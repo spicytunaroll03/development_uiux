@@ -1,38 +1,193 @@
+/* Add styling for your page here */
+
 .App {
-  text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    background-color: rgb(191, 233, 233);
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-desc{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3vw !important
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-title{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    font-size: 3.8vw !important;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cart-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.7vw !important;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-warning {
+    background-color:rgb(250, 243, 191) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-col{
+    padding-top: 2vh;
+    justify-content: center !important;
+    width: 15vw !important;
+    padding-left: 3vw;
 }
+
+.cart-container{
+    justify-content: center !important;
+    text-align: center;
+    outline-style: dashed;
+}
+
+.drop-down-btn{
+    width: 20vw !important;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 3vw; 
+    padding-bottom: 3vh !important;
+    outline-style: solid;
+    border-radius: 20px;
+}
+
+.filter-row {
+    padding-top: 3vh;
+    padding-left: 1vw;
+    height: fit-content;
+}
+.filter-row2 {
+    padding-left: 1vw;
+}
+
+.filter-col {
+    padding-left: 1vw;
+    height: 80vh;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 2vw;
+}
+.filters-sec {
+    padding-left: 1.4vw;
+    background-color:rgb(250, 243, 191);
+    border-radius: 20px;
+}
+
+.filter-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vw !important;
+    font-weight: bold;
+}
+
+
+.filters-title{
+    justify-content: center;
+    padding-top: 3.4vh;
+    text-decoration: underline !important;
+    font-family: 'Times New Roman';
+    font-size: 1.7vw !important;
+    padding-left: 2.4vw;
+    font-weight: bold;
+    
+}
+
+.price-title {
+    font-weight: bold !important;
+    font-family: 'Times New Roman';
+    font-size: 1.2vw;
+}
+
+.main {
+    display: flex;
+    padding-top: 1vh;
+    
+}
+.main-row {
+    padding-bottom: 6vh;
+}
+
+.nav-filter {
+    flex-direction: column!important;
+    flex-wrap: wrap!important;
+    height: 30vh !important;
+}
+
+.filter-pill {
+    width: 8vw !important;
+    font-size: 1.1vw;
+  
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color:rgb(255, 230, 121) !important;
+}
+
+.navbar {
+    flex-direction: column !important;
+    width: 20vw;
+    align-items: flex-start !important;
+    padding-left: 1.5vw !important;
+}
+
+/* SORTING FUNCTIONALITY*/
+#ascending-bttn{
+    width: 12vw;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 230, 121) !important;
+    border-color:rgb(255, 230, 121) !important;
+    font-size: 1.2vw;
+    
+}
+
+#ascending-bttn:focus, #descending-bttn:focus, #reset-bttn:focus
+{ background:rgb(205, 157, 0) !important }
+
+
+#descending-bttn {
+    width: 12vw;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 230, 121) !important;
+    border-color:rgb(255, 230, 121) !important;
+    font-size: 1.2vw;
+}
+
+#reset-bttn {
+    width: 12vw;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 230, 121) !important;
+    border-color:rgb(255, 230, 121) !important;
+    font-size: 1.2vw;
+}
+.sort-container{
+    width: 50vw !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sort-price-title {
+  
+    font-size: 1.5vw !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.sort-row{
+    padding-top: 6vh;
+    justify-content: center;
+}
+
+
+
+

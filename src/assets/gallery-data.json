@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Flower Cat",
+    "description": "Edwina wearing a floral handkerchief gifted by her owner.",
+    "price": 3.99,
+    "category": "Acrylic",
+    "artist": "Anonymous Kat",
+    "image": "images/hooded-cat.jpeg"
+  },
+  {
+    "name": "Momma & Her Lil Birdies",
+    "description": "Mother Bird takes care of her children.",
+    "price": 4.99,
+    "category": "Color Pencil",
+    "artist": "Euphoric Artist",
+    "image": "images/cottage-birds.jpeg"
+  },
+  {
+    "name": "Fortune Cat",
+    "description": "There is a rumour that cats bring you fortune.",
+    "price": 2.99,
+    "category": "Acrylic",
+    "artist": "Anonymous Kat",
+    "image": "images/canoli-cats.jpeg"
+  },
+  {
+    "name": "A Good Breeze",
+    "description": "Open your window, smell the breeze, and cherish the day",
+    "price": 5.99,
+    "category": "Digital",
+    "artist": "Saphire K.",
+    "image": "images/curtain-fox.jpeg"
+  },
+  {
+    "name": "Bunnies in Flower Field",
+    "description": "A cottage couple picking flowers in the evening.",
+    "price": 2.99,
+    "category": "Color Pencil",
+    "artist": "Euphoric Artist",
+    "image": "images/cottage-bunnies.jpeg"
+  },
+  {
+    "name": "On a Business Trip",
+    "description": "Bernard's first business trip out of town!",
+    "price": 1.99,
+    "category": "Water Color",
+    "artist": "Saphire K.",
+    "image": "images/dog-umbrella.jpeg"
+  },
+  {
+    "name": "A New Friend",
+    "description": "Friendships form in the most unexpected times and places.",
+    "price": 3.99,
+    "category": "Acrylic",
+    "artist": "Giselle L.",
+    "image": "images/umbrella-pic.jpeg"
+  },
+  {
+    "name": "Royal Cat",
+    "description": "Portrait of a RoyaL Cat and its companion, Sir. Duck.",
+    "price": 2.99,
+    "category": "Color Pencil",
+    "artist": "Anonymous Kat",
+    "image": "images/king-cat.jpeg"
+  },
+  {
+    "name": "The Flower Shop Owner",
+    "description": "Fiona the flower shop owner waters her plants.",
+    "price": 2.99,
+    "category": "Water Color",
+    "artist": "Saphire K.",
+    "image": "images/rose-store.jpeg"
+  },
+  {
+    "name": "Strawberry Cats",
+    "description": "Family of cats bathing in the strawberry field.",
+    "category": "Digital",
+    "price": 4.99,
+    "artist": "Anonymous Kat",
+    "image": "images/strawberry-cats.jpeg"
+  },
+  {
+    "name": "Bunny's First Call",
+    "description": "Lola's first phone call with her friend from home.",
+    "price": 2.99,
+    "category": "Digital",
+    "artist": "Euphoric Artist",
+    "image": "images/kawaii-bunny.jpeg"
+  },
+  {
+    "name": "Surprise!",
+    "description": "Ginselle and Bunny hiding behind a bush.",
+    "price": 2.99,
+    "category": "Digital",
+    "artist": "Giselle L.",
+    "image": "images/picture-book.jpeg"
+  }
+]

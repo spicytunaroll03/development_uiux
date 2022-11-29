@@ -1,15 +1,18 @@
-# Development
-
-### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
-
-### Goal and Value of the Application
-
-### Usability Principles Considered
-
-### Organization of Components
-
-### How Data is Passed Down Through Components
-
-### How the User Triggers State Changes
-
+The goal of my application is to allow for small artists to deploy their artistic pieces through an online platform, providing easy access for customers to look through and purchase! Whether the mediums they used to create their art pieces be digital, water color, acrylic, or color pencil, artists can share their art pieces with those who want to buy from them! Each piece is unique and can only be bought by one buyer. The customer who visits this website can filter the art pieces they want to see by selecting specific categories in the medium type or artist filters. 
+--------------------------------------------------------------------------------
+Organization of Components 
+I created a component for each product item (also known as the art piece) called the ProductItem.js; this is because such items contain fields that will be used for filtering and sorting. I placed each product  item in a card imported from Bootstrap, where I made sure that each item’s name, price, description, and artist were being displayed. Within the card has an important button used to “Add to Cart” or “Remove from Cart,” which is a button that will change its text on display depending on whether it has been added to the cart yet. Using the useState variables and setter functions, based on the state of whether the cart already includes the item or not, by clicking on the default “Add to Cart” button displayed, the addToCart() function in the App.js will be called; if an item is already in the cart, the “Remove from Cart” button will be displayed as the removeFromCart() function will be invoked. An important stylistic choice I made was to remove the option of adding to cart multiple times; because an artistic piece can only be bought once since it is unique, it is not possible for one to buy multiple of the same artwork, which is why I chose to implement the “Add to Cart” button and “Remove from Cart” button all in one toggle button for easier user usability. 
+My App.js handles the majority of the functionalities such as sorting, filtering, and actually adding/removing items to and from the cart. 
+--------------------------------------------------------------------------------
+Cart functionality 
+I have a useState that indicates the state of the cart. I have an addToCart() function that checks to see if an item is in the cart, and if so, it will not add it to the cart. If the item is not in the cart, the item will be added to the cart through the useState. In my removeFromCart() function, I initially find the index of the item in the list of items in the cart, and remove the item at that index of the list; again, I set the state of the cart at that point. Finally, I have a calculateTotal() function, which loops through each item in the cart, later called in the part of my code where I build my cart. 
+--------------------------------------------------------------------------------
+Filter functionality 
+In order to create my two filters for category and artist, I initially created a Navbar to contain Navpills for the customer to click on to apply a filter and select a specific category. I have two functions that handle each filter called handleFilter() and handleArtist(), where the filter functions take in an eventKey passed in from the Navpill that was clicked to set the state variables: the initial states in the useState are initially set to default to “All.” Based on the specific categories and filters pressed on by the user, the matchesFilterType() function returns a boolean value whether each item should be shown or not, handling all of the edge cases of two different filters being applied in different ways. With the boolean returned by this function, I used this value later when calling .filter() on my product gallery to map each item that must be displayed. 
+--------------------------------------------------------------------------------
+Sort functionality 
+After implementing the filter functionality, I approached sorting the items in ascending and descending order by item price: I decided to have three simple buttons of Ascending, Descending, and Reset. Similar to how I used the onClick() functions for the filters previously, I called handleAscendingSort(), handleDescendingSort(), and resetSort() for each button respectively. Each sort function handler again takes in an eventKey and sets the sort type using the useState. Then, I call the functions ascOrder() and descOrder() which include the algorithms to actually sort the items accordingly based on the item’s price.  
+--------------------------------------------------------------------------------
+Hierarchy/Layout
+Based on the assumption that customers may have a wide spectrum of knowledge of art, they can come in very unsure/curious about what artworks to buy or have a specific style of art they have in mind. To ensure that the user is able to easily navigate and achieve their goal of buying an artist’s work, I made sure to separate the filtering navbar and the sort buttons into different sections. It is quite intuitive for filters to be on the side, while sorting items by price be on the top of the gallery. Having the art gallery of items in the middle, each item displayed through a card, allows the user to quickly identify where to buy their products. Rather than having the cart be able the bottom of the page, I also placed the cart next to the gallery so that the user can see the items in the cart and their total price in ease without having to scroll back down each time. 
+--------------------------------------------------------------------------------

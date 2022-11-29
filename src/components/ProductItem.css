@@ -1,0 +1,92 @@
+.ProductItem {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding-top: 3vh;
+}
+
+.card {
+    width: 18.5vw;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    height: 70vh !important;
+}
+.card-img-top {
+    height: 40vh;
+}
+.gallery {
+    justify-content: center;
+}
+
+.card-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.3vw;
+    text-align: center;
+}
+.card-price {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold !important;
+    font-size: 1.2vw !important;
+    text-align: center !important;
+    color:rgb(34, 90, 90);
+}
+
+.card-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    font-style: italic;
+    padding-top: 2vh;
+}
+
+.card-artist {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
+.card-category {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    color:rgba(36, 35, 35, 0.4);
+    text-align: center;
+}
+
+#btn {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 1.2vw;
+}
+
+img {
+    width: 50%;
+}
+
+button {
+    width: 30%;
+}
+
+
+.button-row {
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.btn-primary {
+    background-color:rgb(141, 217, 217) !important;
+    border-color:rgb(61, 94, 94) !important;
+    border-width: 2px !important;
+    color: black !important;
+    font-size: 1.2vw !important;
+}
+
+.btn-primary:focus {
+    background-color: black !important;
+}
+
+.item-name {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 1.0vw !important;
+    color:rgb(44, 136, 136);
+    font-weight: bold;
+}
+
+
